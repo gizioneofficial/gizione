@@ -29,7 +29,7 @@ dependencies:
   google_fonts: ^6.2.1 # fallback if local Poppins not loaded
 
   # ── Utils ──────────────────────────────────────────────────
-  intl: ^0.19.0
+  intl: 0.20.2
   connectivity_plus: ^6.0.3
 
 dev_dependencies:
