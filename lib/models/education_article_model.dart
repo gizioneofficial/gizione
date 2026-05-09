@@ -2,6 +2,21 @@
 
 enum ArticleCategory { tips, fakta, resep, mitos }
 
+extension ArticleCategoryX on ArticleCategory {
+  String get label {
+    switch (this) {
+      case ArticleCategory.tips:
+        return 'Tips';
+      case ArticleCategory.fakta:
+        return 'Fakta';
+      case ArticleCategory.resep:
+        return 'Resep';
+      case ArticleCategory.mitos:
+        return 'Mitos vs Fakta';
+    }
+  }
+}
+
 class EducationArticleModel {
   final String id;
   final String title;

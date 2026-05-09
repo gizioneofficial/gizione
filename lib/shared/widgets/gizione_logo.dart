@@ -1,4 +1,6 @@
 // lib/shared/widgets/gizione_logo.dart
+//
+// Uses the official GiziOne_Logo.png asset instead of text.
 
 import 'package:flutter/material.dart';
 
@@ -8,50 +10,10 @@ class GiziOneLogo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        Row(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Text(
-              'Gizi',
-              style: TextStyle(
-                fontFamily: 'Poppins',
-                fontWeight: FontWeight.w800,
-                fontSize: 42 * scale,
-                color: const Color(0xFF5B8A3C),
-                height: 1.0,
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(bottom: 8 * scale),
-              child: Text('🍎', style: TextStyle(fontSize: 20 * scale)),
-            ),
-            Text(
-              'One',
-              style: TextStyle(
-                fontFamily: 'Poppins',
-                fontWeight: FontWeight.w800,
-                fontSize: 42 * scale,
-                color: const Color(0xFFE8963A),
-                height: 1.0,
-              ),
-            ),
-          ],
-        ),
-        SizedBox(height: 2 * scale),
-        Text(
-          'Yuk mulai hidup sehat hari ini!',
-          style: TextStyle(
-            fontFamily: 'Poppins',
-            fontWeight: FontWeight.w400,
-            fontSize: 13 * scale,
-            color: const Color(0xFF5B8A3C),
-          ),
-        ),
-      ],
+    return Image.asset(
+      'assets/images/GiziOne_Logo.png',
+      width: 200 * scale,
+      fit: BoxFit.contain,
     );
   }
 }

@@ -1,5 +1,5 @@
 // lib/app.dart
-// Root of the GiziOne app — MaterialApp + GoRouter setup
+// This file is intentionally minimal — main.dart handles the app setup.
 
 import 'package:flutter/material.dart';
 import 'core/theme/app_theme.dart';

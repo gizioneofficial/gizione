@@ -12,25 +12,28 @@ dependencies:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
+  # ── Video player (splash animation) ───────────────────────
+  video_player: ^2.8.3
 
   # ── AI & Networking ────────────────────────────────────────
   http: ^1.2.1
 
-  # ── Camera & Image ─────────────────────────────────────────
+  # ── In-app Camera ──────────────────────────────────────────
+  camera: ^0.10.5+9
   image_picker: ^1.1.2
 
-  # ── Environment / API key management ──────────────────────
+  # ── Environment ────────────────────────────────────────────
   flutter_dotenv: ^5.1.0
 
-  # ── State (simple for now — add Riverpod later) ────────────
-  # flutter_riverpod: ^2.5.1   ← uncomment when adding providers
+  # ── Local Storage (onboarding flag, cache) ─────────────────
+  shared_preferences: ^2.2.3
 
   # ── Fonts ──────────────────────────────────────────────────
-  google_fonts: ^6.2.1 # fallback if local Poppins not loaded
+  google_fonts: ^6.2.1
 
   # ── Utils ──────────────────────────────────────────────────
-  intl: 0.20.2
   connectivity_plus: ^6.0.3
+  permission_handler: ^11.3.1
 
 dev_dependencies:
   flutter_test:
